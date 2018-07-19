@@ -1,18 +1,134 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body {
+    font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+	opacity: 0.7;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn:hover {
+cursor:pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.containerpicture {
+    position: absolute;
+    text-align: center;
+    color: white;
+	width: 100%
+	top: 0;
+    left: 0;
+	z-index:0;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.openmenu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+	font-size:30px;
+}
+
+.openmenu:hover{
+	cursor:pointer
+}
+
+h1 {
+	text-align: center;
+	color: rgb(40,140,40);
+	strong;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 60px;
+}
 
 </style>
+</head>
 
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div>
-			<h1><center>"center" Colvard Academy</center></h1>
-			<p>Content will be uploaded soon</p>
-		</div>
+
+<span class="containerpicture">
+	<img src="Website-Design-Background.png" alt="Background" width=100%>
+	<div class="centered">
+		<h1>Colvard Academy</h1>
+		<h4>Content will be uploaded soon</h4>
 	</div>
+</span>
+
+
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
+
+<div id="myOpenmenu" class="openmenu" onclick="openNav();">&#9776;</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("myOpenmenu").style.opacity = "0";
+	document.getElementById("myOpenmenu").style.transition= "0.5s";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("myOpenmenu").style.opacity = "100";
+	document.getElementById("myOpenmenu").style.transition= "2s";
+}
+</script>
+
 </body>
 </html>
