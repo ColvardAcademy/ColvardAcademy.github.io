@@ -12,7 +12,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 0px
     position: fixed;
     z-index: 1;
     top: 0;
@@ -76,7 +76,7 @@ cursor:pointer;
 .openmenu {
     position: fixed;
     top: 10px;
-    left: 10px;
+    right: 10px;
 	font-size:30px;
 }
 
@@ -118,13 +118,13 @@ h1 {
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.right = "250px";
+    document.getElementById("mySidenav").style.width = "250px";
 	document.getElementById("myOpenmenu").style.opacity = "0";
 	document.getElementById("myOpenmenu").style.transition= "0.5s";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.right = "0";
+    document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("myOpenmenu").style.opacity = "100";
 	document.getElementById("myOpenmenu").style.transition= "2s";
 	
