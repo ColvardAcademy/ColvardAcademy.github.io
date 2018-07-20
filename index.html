@@ -37,24 +37,8 @@ body {
     display: block;
     transition: 0.3s;
 }
-.sidenav a:link{
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-.sidenav a:visited{
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
 
-.sidenav a:hover, a:active{
+.sidenav a:hover{
     color: #f1f1f1;
 }
 
@@ -131,7 +115,7 @@ h5 {
 }
 p {
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	color: rgb(250,250,250);
 }
 p.boxmargin {
@@ -139,7 +123,10 @@ p.boxmargin {
 	margin-right: 150px;
 }
 
-a.box:link, a:visited {
+
+.box{
+}
+.box a{
     background-color: white;
     color: black;
     border: 2px solid green;
@@ -150,7 +137,7 @@ a.box:link, a:visited {
     display: inline-block;
 }
 
-a.box:hover, a:active {
+.box a:hover{
     background-color: green;
     color: white;
 }
@@ -227,16 +214,22 @@ function closeNav() {
 
 <div>
 <span class="a">
-	<center><a class="box" href = "ColvardAcademy.github.io/Mission/"><b>Mission</b></a></center>
-    <p class = "boxmargin">Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."</p>
+	<div class="box">
+		<center><a href = "ColvardAcademy.github.io/Mission/"><b>Mission</b></a></center>
+		<p class = "boxmargin">Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."</p>
+	</div>
 </span>
 <span class="b">
-    <center><a class="box" href = "ColvardAcademy.github.io/Services/"><b>Services</b></a></center>
-    <p class = "boxmargin">Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis and dissertation consultations, and <b>FREE</b> first-time university student consultations.</p>
+	<div class="box">
+		<center><a class="box" href = "ColvardAcademy.github.io/Services/"><b>Services</b></a></center>
+		<p class = "boxmargin">Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis and dissertation consultations, and <b>FREE</b> first-time university student consultations.</p>
+	</div>
 </span>
 <span class="c">
-	<center><a class="box" href = "ColvardAcademy.github.io/About/"><b>About Us</b></a></center>
-    <p class = "boxmargin">Colvard Acadmeny is dedicated to providing <b>QUALITY</b> suplimtary education for university students at a <b>REASONABLE PRICE.</b></p>
+	<div class="box">
+		<center><a class="box" href = "ColvardAcademy.github.io/About/"><b>About Us</b></a></center>
+		<p class = "boxmargin">Colvard Acadmeny is dedicated to providing <b>QUALITY</b> suplimtary education for university students at a <b>REASONABLE PRICE.</b></p>
+	</div>
 </span>
 </div>
 
