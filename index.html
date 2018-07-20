@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border-width: 0;
-	background-image: url('Website-Design-Background.png');
+	background-image: url('IMG_2972_BW.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	min-height: 100vh;
@@ -62,9 +62,10 @@ cursor:pointer;
 
 .openmenu {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 16px;
+    left: 24px;
 	font-size:30px;
+	color: rgb(255,255,255);
 }
 
 .openmenu:hover{
@@ -74,59 +75,90 @@ cursor:pointer;
 
 .centered_title {
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 60px;
+	left: 50%;
 	margin: 0px;
 	padding: 0px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,0);
 }
 
 
 h1 {
 	text-align: center;
-	color: rgb(20,110,20);
-	font-size: 60px;
+	color: rgb(255,255,255);
+	font-size: 70px;
+	margin:0;
+	padding:0;
+	
+	text-shadow: 3px 2px rgb(100,190,100);
+}
+h2 {
+	text-align: center;
+	color: rgb(150,230,150);
+	font-size: 32px;
+	margin:0;
+	padding:0;
+}
+h3 {
+	text-align: center;
+	color: rgb(160,240,160);
+	font-size: 20px;
+	margin:0;
+	padding:0;
 }
 h4 {
 	text-align: center;
-	color: rgb(200,255,200);
-	font-size: 20px;
+	color: rgb(210,255,210);
+	font-size: 16px;
+	margin:0;
+	padding:0;
+}
+h5 {
+	text-align: center;
+	color: rgb(50,130,50);
+	font-size: 14px;
+	margin:0;
+	padding:0;
+}
+
+p.margin35px {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+h2.margintop{
+	margin-top: 20px;
 }
 
 
 span.a {
-    display: inline;
 	position: absolute;
-	top: 60%;
-	left: 3.33%;
-    width: 30%;
-    height: 400px;
+	top: 240px;
+	left: 0;
+    width: 100%;
+    height: 210px;
     padding: 0px;
 	margin: 0px;
-    background-color: rgb(60,160,60,0.18); 
+    background-color: rgb(60,100,60,0.5); 
 }
 span.b {
-    display: inline;
 	position: absolute;
-	top: 60%;
-	left: 34.995%;
-    width: 30%;
-    height: 400px;
+	top: 470px;
+	left: 0;
+    width: 100%;
+    height: 210px;
     padding: 0px;
 	margin: 0px;
-    background-color: rgb(60,160,60,0.18); 
-	
+    background-color: rgb(60,100,60,0.5); 
 }
 span.c {
-    display: inline;
 	position: absolute;
-	top: 60%;
-	left: 66.66%;
-    width: 30%;
-    height: 400px;
+	top: 700px;
+	left: 0;
+    width: 100%;
+    height: 210px;
     padding: 0px;
 	margin: 0px;
-    background-color: rgb(60,160,60,0.18); 
+    background-color: rgb(60,100,60,0.5); 
 }
 
 </style>
@@ -136,7 +168,7 @@ span.c {
 
 <div class="centered_title">
 	<h1>Colvard Academy</h1>
-	<h4>Content will be uploaded soon</h4>
+	<h4><br/>Personalized Univeristy Suplimental Education</h4>
 </div>
 
 
@@ -166,16 +198,16 @@ function closeNav() {
 
 <div>
 <span class="a">
-	<a href = "ColvardAcademy.github.io/Mission/"><h2>Mission</h2></a>
-    <p>Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."<br/><br/><a href="ColvardAcademy.github.io/Mission/">read more...</a></p>
+	<a href = "ColvardAcademy.github.io/Mission/"><h2 class="margintop">Mission</h2></a>
+    <p class = "margin35px">Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."<br/><br/><a href="ColvardAcademy.github.io/Mission/">read more...</a></p>
 </span>
 <span class="b">
-    <a href = "ColvardAcademy.github.io/Products/"><h2>Products</h2></a>
-    <p>Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis/dissertation consultations, and <b>FREE</b> first-time university student consultations.<br/><br/><a href="ColvardAcademy.github.io/Products/">read more...</a></p>
+    <a href = "ColvardAcademy.github.io/Products/"><h2 class="margintop">Products</h2></a>
+    <p class = "margin35px">Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis/dissertation consultations, and <b>FREE</b> first-time university student consultations.<br/><br/><a href="ColvardAcademy.github.io/Products/">read more...</a></p>
 </span>
 <span class="c">
-	<a href = "ColvardAcademy.github.io/AboutUs/"><h2>About Us</h2></a>
-    <p>Colvard Acadmeny is dedicated to providing <b>QUALITY</b> suplimtary education for university students at a <b>REASONABLE PRICE.</b> <br/><br/><a href="ColvardAcademy.github.io/AboutUs/">read more...</a></p>
+	<a href = "ColvardAcademy.github.io/AboutUs/"><h2 class="margintop">About Us</h2></a>
+    <p class = "margin35px">Colvard Acadmeny is dedicated to providing <b>QUALITY</b> suplimtary education for university students at a <b>REASONABLE PRICE.</b> <br/><br/><a href="ColvardAcademy.github.io/AboutUs/">read more...</a></p>
 </span>
 </div>
 
