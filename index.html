@@ -115,12 +115,13 @@ h5 {
 }
 p {
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	color: rgb(250,250,250);
 }
 p.boxmargin {
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	position: relative;
 }
 
 
@@ -142,35 +143,16 @@ p.boxmargin {
     color: white;
 }
 
-span.a {
+.a {
 	position: absolute;
 	top: 260px;
 	left: 0;
     width: 100%;
-    height: 120px;
-    padding-top: 22px;
+    height: 500px;
+    padding-top: 40px;
 	margin: 0px; 
 	z-index: 1;
-}
-span.b {
-	position: absolute;
-	top: 380px;
-	left: 0;
-    width: 100%;
-    height: 120px;
-    padding-top: 22px;
-	margin: 0px;
-	z-index: 1;
-}
-span.c {
-	position: absolute;
-	top: 520px;
-	left: 0;
-    width: 100%;
-    height: 120px;
-    padding-top: 22px;
-	margin: 0px;
-	z-index: 1;
+	background-color: rgba(250,250,250,0.3);
 }
 
 </style>
@@ -209,25 +191,19 @@ function closeNav() {
 </div>
 
 
-<div>
-<span class="a">
+<div class="a">
 	<div class="box">
 		<center><a href = "ColvardAcademy.github.io/Mission/"><b>Mission</b></a></center>
-		<p class = "boxmargin">Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."</p>
+		<p class = "boxmargin">Colvard Acadmeny started with one simple thought: "Online learning solutions should be more personalized."</p></br>
 	</div>
-</span>
-<span class="b">
 	<div class="box">
 		<center><a class="box" href = "ColvardAcademy.github.io/Services/"><b>Services</b></a></center>
-		<p class = "boxmargin">Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis and dissertation consultations, and <b>FREE</b> first-time university student consultations.</p>
+		<p class = "boxmargin">Colvard Academy provides many different solutions for students at all level of college or univerity. Services include personalized tutoring, thesis and dissertation consultations, and <b>FREE</b> first-time university student consultations.</p></br>
 	</div>
-</span>
-<span class="c">
 	<div class="box">
 		<center><a class="box" href = "ColvardAcademy.github.io/About/"><b>About Us</b></a></center>
 		<p class = "boxmargin">Colvard Acadmeny is dedicated to providing <b>QUALITY</b> suplimtary education for university students at a <b>REASONABLE PRICE.</b></p>
 	</div>
-</span>
 </div>
 
 </body>
